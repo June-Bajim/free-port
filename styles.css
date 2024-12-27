@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  padding: 10px 20px;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header ul li {
+  margin: 0 15px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  color: #ff9800;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* General Section Styling */
+#about {
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+
+/* Layout: About Container */
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Image Section */
+.about-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 60vh;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Text Content Section */
+.about-content {
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+  line-height: 1.8;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image,
+  .about-content {
+    max-width: 100%;
+  }
+
+  .profile-pic {
+    height: auto;
+  }
+}
+
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+#skills ul li {
+  display: flex;
+  align-items: center;
+}
+
+#skills ul li i {
+  margin-right: 10px;
+  color: #ff9800;
+  font-size: 1.5em;
+}
+
+/* General Section Styling */
+#projects {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+#projects p {
+  margin-bottom: 20px;
+}
+
+/* Projects Grid Styling */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Space between cells */
+}
+
+/* Individual Project Styling */
+.project {
+  background-color: #222; /* Dark gray background */
+  border: 1px solid #444; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px;
+  text-align: left;
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #ffcc00; /* Highlight color for project titles */
+  font-size: 1.2em; /* Slightly smaller font size */
+}
+
+.project p {
+  font-size: 0.9em; /* Reduced font size for descriptions */
+  line-height: 1.4;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1e90ff; /* Link color */
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.project a:hover {
+  text-decoration: underline;
+  color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+
+footer {
+  background: #222;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
